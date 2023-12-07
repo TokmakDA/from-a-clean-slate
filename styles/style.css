@@ -5,6 +5,20 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+blockquot {
+  margin: 0;
+  padding: 0;
+}
+
 .page {
   font-family: "EB Garamond", "Inter", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -22,7 +36,17 @@
   flex-direction: column;
   margin: 0 auto;
 }
-
+.content {
+  flex: 1 1 auto;
+}
+.content-section_theme_dark {
+  background: var(--black-bg, #131313);
+  color: var(--text-gray, #ccc);
+}
+.content-section_theme_bright {
+  background: var(--yellow-bg, #fee42a);
+  color: var(--black-bg, #131313);
+}
 .header {
   margin: 0 auto;
   padding: 24px 20px;
@@ -30,6 +54,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background: var(--black-bg, #131313);
 }
 
 .header__logo {
@@ -74,8 +99,13 @@
   line-height: 19.2px;
   text-decoration: none;
 }
-.cover {
+
+.content__section {
   margin: 0 auto;
+  display: flex;
+}
+
+.cover {
   padding: 7px 20px 5px;
   background-image: url(../images/Ellipse-2.svg), url(../images/Polygon-1.svg);
   background-repeat: no-repeat;
@@ -102,4 +132,197 @@
 }
 .text-right {
   align-self: flex-end;
+}
+
+.intro {
+  padding: 30px 20px 37px;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.intro__heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: start;
+  gap: 10px;
+}
+.intro__title {
+  /* color: var(--text-gray, #ccc); */
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.2px;
+  overflow-wrap: break-word;
+}
+.intro__date {
+  /* color: var(--text-gray, #ccc); */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.2px;
+  white-space: nowrap;
+}
+.intro__main-text {
+  color: #f5f5f5;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.6px;
+  overflow-wrap: break-word;
+}
+
+.reasons {
+  flex-direction: column;
+  padding: 40px 20px;
+  gap: 32px;
+}
+.how-to {
+  flex-direction: column;
+  padding: 40px 20px 60px;
+  gap: 32px;
+}
+.content-section__subtitle {
+  display: flex;
+  flex-direction: column;
+  /* color: var(--black-bg, #131313); */
+  font-family: EB Garamond;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%; /* 32.2px */
+}
+
+.content-section__introduction {
+  /* color: var(--black-bg, #131313); */
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.content-section__list {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content-section__list-item {
+  box-sizing: border-box;
+  margin-left: 16px;
+  padding: 0;
+  list-style-position: outside;
+  /* color: var(--black-bg, #131313); */
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+
+.content-section__list-accent {
+  font-weight: 700;
+}
+
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  list-style: none;
+}
+
+.card {
+  border-radius: 30px;
+  margin: 0;
+  padding: 20px;
+}
+
+.card_theme_dark {
+  background: var(--gray-bg, #343434);
+  color: #f5f5f5;
+}
+
+.card_theme_bright {
+  background: var(--yellow-bg, #fee42a);
+  color: var(--black-bg, #131313);
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card__author {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.card__author-photo {
+  object-fit: cover;
+  width: 100px;
+  aspect-ratio: 1 / 1;
+}
+.card__author-name {
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135%;
+}
+
+.card__title {
+  font-family: "EB Garamond";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 135%;
+}
+
+.card__text {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+
+.footer {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid var(--yellow-bg, #fee42a);
+  background: var(--black-bg, #131313);
+}
+.footer__copy {
+  color: #f5f5f5;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+}
+.footer__links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.footer__link {
+  color: #f5f5f5;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  text-decoration: none;
 }
