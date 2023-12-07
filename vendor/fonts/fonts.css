@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./ebgaramondmedium.woff2') format('woff2')
+    url('./ebgaramondmedium.woff') format('woff') url('./ebgaramondmedium.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./ebgaramondmedium.woff2') format('woff2')
+    url('./ebgaramondmedium.woff') format('woff') url('./ebgaramondmedium.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./interregular.woff2') format('woff2') url('./interregular.woff')
+    format('woff') url('./interregular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./interregular.woff2') format('woff2') url('./interregular.woff')
+    format('woff') url('./interregular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('./Inter-Black.woff2') format('woff2'),
+    url('./Inter-Black.woff') format('woff');
+}

@@ -1,0 +1,105 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/fonts.css);
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  font-family: "EB Garamond", "Inter", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  background-color: #1e1e1e;
+  line-height: normal;
+  min-width: 320px;
+  max-width: 360px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 0 auto;
+  padding: 24px 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__logo {
+  text-decoration: none;
+}
+
+.header__logo-image {
+  object-fit: cover;
+  width: 78.45px;
+}
+
+.header__menu {
+  margin: 0;
+}
+.header__menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.header__menu-item {
+  color: var(--text-light, #f5f5f5);
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+}
+
+.header__menu-item_active {
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+}
+.header__menu-link {
+  color: var(--text-light, #f5f5f5);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-decoration: none;
+}
+.cover {
+  margin: 0 auto;
+  padding: 7px 20px 5px;
+  background-image: url(../images/Ellipse-2.svg), url(../images/Polygon-1.svg);
+  background-repeat: no-repeat;
+  background-size: 120px 120px, 120px 128px;
+  background-position: bottom 0 left 20px, bottom 70px right -26px;
+}
+.cover__title {
+  color: #fff;
+  font-family: "EB Garamond";
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 72px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.accent-span {
+  margin: 0;
+  padding: 0;
+}
+.text-center {
+  align-self: center;
+}
+.text-right {
+  align-self: flex-end;
+}
