@@ -20,7 +20,7 @@ blockquot {
 }
 
 .page {
-  font-family: "EB Garamond", "Inter", Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -79,14 +79,13 @@ blockquot {
 }
 
 .header__menu-item {
-  color: var(--text-light, #f5f5f5);
   text-decoration: none;
   margin: 0;
   padding: 0;
   line-height: 20px;
 }
 
-.header__menu-item_active {
+.header__menu-item_active .header__menu-link {
   text-decoration-line: underline;
   text-underline-offset: 2px;
 }
@@ -107,14 +106,14 @@ blockquot {
 
 .cover {
   padding: 7px 20px 5px;
-  background-image: url(../images/Ellipse-2.svg), url(../images/Polygon-1.svg);
+  background-image: url(../images/ellipse.svg), url(../images/polygon.svg);
   background-repeat: no-repeat;
   background-size: 120px 120px, 120px 128px;
   background-position: bottom 0 left 20px, bottom 70px right -26px;
 }
 .cover__title {
   color: #fff;
-  font-family: "EB Garamond";
+  font-family: "EB Garamond", serif;
   font-size: 72px;
   font-style: normal;
   font-weight: 400;
@@ -148,8 +147,6 @@ blockquot {
   gap: 10px;
 }
 .intro__title {
-  /* color: var(--text-gray, #ccc); */
-  font-family: "Inter";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -157,8 +154,6 @@ blockquot {
   overflow-wrap: break-word;
 }
 .intro__date {
-  /* color: var(--text-gray, #ccc); */
-  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -166,8 +161,10 @@ blockquot {
   white-space: nowrap;
 }
 .intro__main-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   color: #f5f5f5;
-  font-family: "Inter";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -188,8 +185,7 @@ blockquot {
 .content-section__subtitle {
   display: flex;
   flex-direction: column;
-  /* color: var(--black-bg, #131313); */
-  font-family: EB Garamond;
+  font-family: "EB Garamond", serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
@@ -197,8 +193,6 @@ blockquot {
 }
 
 .content-section__introduction {
-  /* color: var(--black-bg, #131313); */
-  font-family: "Inter";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -217,8 +211,6 @@ blockquot {
   margin-left: 16px;
   padding: 0;
   list-style-position: outside;
-  /* color: var(--black-bg, #131313); */
-  font-family: "Inter";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -269,7 +261,6 @@ blockquot {
   aspect-ratio: 1 / 1;
 }
 .card__author-name {
-  font-family: "Inter";
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -277,7 +268,7 @@ blockquot {
 }
 
 .card__title {
-  font-family: "EB Garamond";
+  font-family: "EB Garamond", serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
@@ -285,7 +276,6 @@ blockquot {
 }
 
 .card__text {
-  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -304,7 +294,6 @@ blockquot {
 }
 .footer__copy {
   color: #f5f5f5;
-  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -316,10 +305,12 @@ blockquot {
   display: flex;
   flex-direction: row;
   gap: 16px;
+  list-style: none;
 }
 .footer__link {
+  margin: 0;
+  padding: 0;
   color: #f5f5f5;
-  font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
